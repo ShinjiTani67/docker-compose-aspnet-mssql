@@ -1,13 +1,11 @@
 trigger:
 - main
-
 pool:
-  vmImage: ubuntu-latest
-
+ vmImage: 'ubuntu-latest'
 steps:
 - task: Docker@2
   inputs:
-    containerRegistry: 'dotnetmssqlpf0841g1'
+    containerRegistry: 'dotnetmssqlrm553587'
     repository: 'dotnetsql'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
